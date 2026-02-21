@@ -5,7 +5,7 @@ compose.yaml
 AGENTS.md
 .prettierignore
 .prettierrc
-.eslint.config.js
+eslint.config.js
 
 # Output
 .output
