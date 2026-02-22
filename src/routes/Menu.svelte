@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { MenuIcon } from '@lucide/svelte';
 	import { Menu, Portal } from '@skeletonlabs/skeleton-svelte';
-	import { getUser, logout } from '$lib/api/auth.remote';
-
-	const user = await getUser();
+	import { logout } from '$lib/api/auth.remote';
 </script>
 
 <Menu>
