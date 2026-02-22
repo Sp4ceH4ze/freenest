@@ -1,12 +1,13 @@
 <script lang="ts">
-	import { CircleUserIcon, MenuIcon, SearchIcon } from '@lucide/svelte';
+	import { CircleUserIcon, SearchIcon } from '@lucide/svelte';
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
+	import Menu from './Menu.svelte';
 </script>
 
 <AppBar>
 	<AppBar.Toolbar class="grid-cols-[auto_1fr_auto]">
 		<AppBar.Lead>
-			<button type="button" class="btn-icon btn-icon-lg hover:preset-tonal"><MenuIcon /></button>
+			<Menu />
 		</AppBar.Lead>
 		<AppBar.Headline>
 			<p class="text-2xl">FreeNest</p>
