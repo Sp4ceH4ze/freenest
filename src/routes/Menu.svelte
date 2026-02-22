@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { MenuIcon } from '@lucide/svelte';
 	import { Menu, Portal } from '@skeletonlabs/skeleton-svelte';
+	import { getUser, logout } from '$lib/api/auth.remote';
+
+	const user = await getUser();
 </script>
 
 <Menu>
@@ -32,6 +35,14 @@
 				<Menu.Item value="signup">
 					<Menu.ItemText>
 						<a href="/auth/signup">Sign Up</a>
+					</Menu.ItemText>
+				</Menu.Item>
+				<Menu.Item value="logout">
+					<Menu.ItemText>
+						<form {...logout}>
+							<button type="submit">Logout</button>
+						</form>
+						<!-- <a {...logout} href="">Logout</a> -->
 					</Menu.ItemText>
 				</Menu.Item>
 			</Menu.Content>
