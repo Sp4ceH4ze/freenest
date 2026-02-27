@@ -6,6 +6,8 @@ AGENTS.md
 .prettierignore
 .prettierrc
 eslint.config.js
+drizzle
+tsconfig.json
 
 # Output
 .output
@@ -172,7 +174,7 @@ package
 
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
+.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -216,3 +218,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,svelte,dotenv,node,windows
+# Sentry Config File
+.env.sentry-build-plugin

@@ -50,6 +50,7 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^0.575.0",
+		"@sentry/sveltekit": "^10.40.0",
 		"postgres": "^3.4.8",
 		"valibot": "^1.2.0"
 	}
