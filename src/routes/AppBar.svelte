@@ -10,7 +10,7 @@
 			<Menu />
 		</AppBar.Lead>
 		<AppBar.Headline>
-			<p class="text-2xl">FreeNest</p>
+			<p class="text-2xl font-bold">FreeNest</p>
 		</AppBar.Headline>
 		<AppBar.Trail>
 			<button type="button" class="btn-icon hover:preset-tonal"

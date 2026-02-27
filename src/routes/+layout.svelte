@@ -2,6 +2,7 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount } from 'svelte';
+	import { onNavigate } from '$app/navigation';
 
 	import AppBar from './AppBar.svelte';
 
@@ -9,6 +10,16 @@
 		if (typeof window !== 'undefined') {
 			document.documentElement.setAttribute('data-theme', 'nouveau');
 		}
+	});
+
+	onNavigate((navigate) => {
+		if (!document.startViewTransition) return;
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigate.complete;
+			});
+		});
 	});
 
 	let { children } = $props();
