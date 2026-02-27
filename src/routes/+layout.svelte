@@ -8,7 +8,7 @@
 
 	onMount(() => {
 		if (typeof window !== 'undefined') {
-			document.documentElement.setAttribute('data-theme', 'nouveau');
+			document.documentElement.setAttribute('data-theme', 'terminus');
 		}
 	});
 
