@@ -28,3 +28,26 @@ export const signupSchema = v.object({
         v.minLength(8, 'Your password must have 8 characters or more.')
     )
 });
+
+export const createPostSchema = v.object({
+    title: v.pipe(
+        v.string(),
+        v.nonEmpty('Please enter a title for your post.')
+    ),
+    content: v.pipe(
+        v.string(),
+        v.nonEmpty('Please enter some content for your post.')
+    )
+})
+
+export const editPostSchema = v.object({
+    id: v.string(),
+    title: v.pipe(
+        v.string(),
+        v.nonEmpty('Please enter a title for your post.')
+    ),
+    content: v.pipe(
+        v.string(),
+        v.nonEmpty('Please enter some content for your post.')
+    )
+})
